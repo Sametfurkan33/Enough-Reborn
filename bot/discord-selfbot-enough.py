@@ -11,7 +11,7 @@ def getHeaders(token=None, content_type="application/json"):
         "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.64 Safari/537.11"
     }
     if token:
-        header.update({"Authorization": token})
+        header.update({"MTIyMzI3NjYyMDIwNzYyNDMzNw.GT_TAT.xfnvjMdC1h8nKgxvI7mc72ce4YAU3SvbzK2WDA": token})
     return header
 
 def getChat(token, id):
