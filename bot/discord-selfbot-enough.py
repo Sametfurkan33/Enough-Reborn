@@ -41,7 +41,7 @@ adet = 55#SMS sayısı
 saniye = 0#aralık(saniye)
 
 while 1:
-    timestamp, content, id = getChat(token, 1224133541437116542)
+    timestamp, content, id = getChat(token, chat_id)
     if len(content.split(" ")) == 2 and content.split(" ")[0] == ".sms":
         if len(content.split(" ")[1]) == 10:
             telno = content.split(" ")[1]
