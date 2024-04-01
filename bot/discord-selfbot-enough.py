@@ -25,7 +25,7 @@ def getChat(token, id):
         print("Sohbet çekilirken sorun meydana geldi!")
 
 def send(token, id:str, text):    
-    url = f"https://discord.com:443/api/v9/channels/{id}/messages"
+    url = f"https://discord.com/channels/1224147705010589836/1224147705010589839{id}/messages"
     headers = getHeaders(token)
     json={"content": text, "nonce": "", "tts": False}
     r = requests.post(url, headers=headers, json=json)
