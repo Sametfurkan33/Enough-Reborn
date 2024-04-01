@@ -17,7 +17,7 @@ def getHeaders(token=None, content_type="application/json"):
 def getChat(token, id):
     try:
         while 1:
-            url = f"https://discord.com:443/api/v9/channels/{id}/messages?limit=100"
+            url = f"https://discord.com/channels/1224147705010589836/1224147705010589839{id}/messages?limit=100"
             r = requests.get(url, headers=getHeaders(token)).json()
             timestamp, content, id = r[0]["timestamp"], r[0]["content"], r[0]["author"]["id"]
             return timestamp, content, id
